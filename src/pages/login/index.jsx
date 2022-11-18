@@ -1,13 +1,12 @@
-import Button from "../../components/Button"
+import { Button } from "../../components/Button"
+import { Header } from "../../components/Header";
 
 const Login = () => {
 
     return (<>
-        <h1>Login</h1>
-
-        <Button link="/logado" title="Realizar Login" />
+        <Header />
     </>)
 
 }
 
-export { Login }
+export { Login };

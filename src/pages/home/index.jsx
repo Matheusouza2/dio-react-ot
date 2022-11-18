@@ -1,10 +1,12 @@
-import Button from "../../components/Button"
+import { Button } from "../../components/Button"
+
 const Home = () => {
-    return (<>
+    return (<> 
     
     <h1>Home</h1>
 
-    <Button link="/" title="Fazer Logout"/>
+    <Button>Teste</Button>
+    <Button variant="secondary">Teste 2</Button>
 
     </>)
 }
