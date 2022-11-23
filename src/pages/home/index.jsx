@@ -1,13 +1,30 @@
 import { Button } from "../../components/Button"
+import { Header } from "../../components/Header";
+import { Container, TextContent, Title, TitleHiglight } from "./styles";
 
 const Home = () => {
     return (<> 
-    
-    <h1>Home</h1>
+        <Header />
+        <Container>
+            <div>
+                <Title>
+                    <TitleHiglight>
+                        Implemente <br />
+                    </TitleHiglight>
+                    o seu futuro global agora!
+                </Title>
 
-    <Button>Teste</Button>
-    <Button variant="secondary">Teste 2</Button>
+                <TextContent>
+                    Domine as tecnologias utilizadas pelas empresas mais inovadoras do mundo e encare seu novo desafio profissional, evoluindo em comunidade com os melhores experts.
+                </TextContent>
 
+                <Button title="Começar agora" variant="secondary" onClick={() => null}/>
+            </div>
+
+            <div>
+                <img src="https://hermes.digitalinnovation.one/public/components/pages/home/header/banner-play.png" width="80%" alt="Banner"/>
+            </div>
+        </Container>
     </>)
 }
 
