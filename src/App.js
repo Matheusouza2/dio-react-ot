@@ -6,6 +6,7 @@ import {
 
 import { Login } from "./pages/login";
 import { Home } from "./pages/home";
+import { Feed } from './pages/feed';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <Route path="/" element={ <Home /> }></Route>
 
         <Route path="/login" element={ <Login /> }></Route>
+
+        <Route path="/feed" element={ <Feed />}></Route>
       </Routes>
     </Router>
   );

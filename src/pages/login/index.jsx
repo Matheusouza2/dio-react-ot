@@ -1,10 +1,18 @@
 import { MdEmail, MdLock } from 'react-icons/md';
+import { useNavigate } from 'react-router-dom';
 import { Button } from "../../components/Button"
 import { Header } from "../../components/Header";
 import { Input } from "../../components/Input";
 import { Container, TextContent, Column, CriarText, EsqueciText, Row, SubTitleLogin, Title, TitleLogin, Wrapper } from "./styles";
 
 const Login = () => {
+
+    const navigate = useNavigate();
+
+    const handleClickFeed = () => {
+        navigate('/feed')
+    };
+
     return (<> 
         <Header />
         <Container>
@@ -22,7 +30,7 @@ const Login = () => {
                     <form>
                         <Input placeholder="E-mail" leftIcon={<MdEmail/>}/>
                         <Input placeholder="Senha" type="password" leftIcon={<MdLock />}/>
-                        <Button title="Entrar" variant="secondary"/>
+                        <Button title="Entrar" variant="secondary" type="button" onClick={handleClickFeed}/>
                     </form>
 
                     <Row>
